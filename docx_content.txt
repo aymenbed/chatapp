@@ -1,0 +1,100 @@
+Description : Contient des données de vibrations provenant d'un banc d'essai de roulements avec diverses conditions de défaut, y compris des défauts de la bague extérieure et intérieure.39
+Nom du Jeu de Données : Wind Turbine Gearbox Condition Monitoring Vibration Analysis Benchmarking Datasets
+Source : NREL (National Renewable Energy Laboratory) / data.gov
+Lien : https://catalog.data.gov/dataset/wind-turbine-gearbox-condition-monitoring-vibration-analysis-benchmarking-datasets
+Description : Comprend des données de vibrations provenant d'une boîte de vitesses d'éolienne endommagée, y compris des événements de perte d'huile qui ont endommagé les roulements internes.42
+Nom du Jeu de Données : A Graph-Data-Based Monitoring Method of Bearing Lubrication Using Multi-Sensor
+Source : ResearchGate / Zenodo
+Lien : https://zenodo.org/records/820576
+Description : Jeu de données de recherche pour le démonstrateur automobile du projet AEGIS, comprenant des données de capteurs (GPS, gyroscope, accélération) collectées via l'interface OBD2 d'un véhicule.43
+5.2 Jeux de Données Relatifs à l'Analyse d'Huile
+Des jeux de données ouverts incluent des données d'analyse d'huile, potentiellement provenant de véhicules ou d'équipements industriels.44
+Nom du Jeu de Données : Airbus Oil Storage Detection Dataset
+Source : Kaggle
+Lien : https://www.kaggle.com/datasets/airbusgeo/airbus-oil-storage-detection-dataset/data
+Description : Contient des images satellite avec des annotations pour les réservoirs de stockage de pétrole, pertinentes pour la surveillance de l'infrastructure pétrolière.45
+Nom du Jeu de Données : OATS: The most advanced Vehicle Oil and Lubricant Database on the Market
+Source : Infopro Digital Automotive
+Lien : https://www.infopro-digital-automotive.com/oats-lubricants/
+Description : Base de données commerciale de lubrifiants pour véhicules offrant des informations détaillées sur les spécifications et la compatibilité des lubrifiants.46
+Nom du Jeu de Données : U.S. Energy Information Administration (EIA) Open Data
+Source : EIA / data.gov
+Lien : https://www.eia.gov/opendata/
+Description : Offre diverses données énergétiques, y compris des informations sur le pétrole et d'autres liquides, potentiellement utiles pour l'analyse du marché des lubrifiants.47
+5.3 Jeux de Données Relatifs aux Données de Capteurs Véhicules et aux Défaillances
+Plusieurs jeux de données ouverts contiennent des données de capteurs provenant de véhicules, y compris potentiellement des informations sur les défaillances ou les événements de maintenance.43
+Nom du Jeu de Données : APS Failure at Scania Trucks Data Set
+Source : Kaggle / UCI Machine Learning Repository
+Lien : https://www.kaggle.com/datasets/uciml/aps-failure-at-scania-trucks-data-set
+Description : Contient des données de capteurs provenant de camions lourds Scania liées au système de pression d'air (APS), avec des étiquettes indiquant les défaillances des composants.57
+Nom du Jeu de Données : AI-Powered Predictive Maintenance System for Vehicles with Real-Time Data Visualization and Analysis
+Source : GitHub
+Lien :(https://github.com/Siddhartha80/AI-Powered-Predictive-Maintenance-System-for-Vehicles-with-Real-Time-Data-Visualization-and-Analysis)
+Description : Projet visant à implémenter un système de maintenance prédictive basé sur l'IA pour les moteurs, en se concentrant sur l'utilisation de modèles de Gradient Boosting pour prédire l'état du moteur à partir de données de capteurs.59
+Nom du Jeu de Données : ML-Based Vehicle Predictive Maintenance System with Real-Time Visualization
+Source : GitHub
+Lien :(https://github.com/iDharshan/ML-Based-Vehicle-Predictive-Maintenance-System-with-Real-Time-Visualization)
+Description : Projet utilisant l'apprentissage automatique pour la maintenance prédictive des véhicules avec visualisation en temps réel des données de capteurs telles que le régime moteur, la pression d'huile, la pression de carburant et la température du liquide de refroidissement.60
+Ces jeux de données publics peuvent fournir des ressources précieuses pour mettre en pratique les techniques d'analyse de données pertinentes pour la maintenance prédictive des systèmes de lubrification. L'accès à des données réelles ou simulées est essentiel pour développer et tester des modèles de maintenance prédictive. L'identification des jeux de données ouverts pertinents permettra une expérimentation pratique dans le cadre du projet de fin d'études.
+6. Aperçu des Normes et Documents Techniques
+6.1 Normes ISO
+Plusieurs normes ISO sont pertinentes pour les lubrifiants, les systèmes de lubrification et la maintenance des véhicules.
+ISO 9001 : Norme relative aux systèmes de management de la qualité, applicable aux processus de maintenance et de gestion des lubrifiants.61
+ISO 14001 : Norme relative aux systèmes de management environnemental, pertinente pour la gestion et l'élimination des lubrifiants usagés.61
+ISO 4406 : Norme pour la quantification des niveaux de contamination particulaire dans les fluides hydrauliques.63
+ISO 3448 : Classification de la viscosité industrielle des lubrifiants.64
+ISO 6743 : Classification des lubrifiants, huiles industrielles et produits connexes (Classe L).66
+ISO 12924 : Spécifications relatives à la famille X (graisses) pour les lubrifiants, huiles industrielles et produits connexes de Classe L, principalement utilisées pour la lubrification des roulements antifriction montés sur des machines, des véhicules, etc..66
+ISO 12925-3 : Spécifications des graisses pour les applications d'engrenages.66
+ISO 24254 : Spécifications des huiles pour moteurs à quatre temps à allumage commandé de motocyclettes et leurs transmissions associées (catégories EMA et EMB).67
+Les normes ISO fournissent un cadre pour la qualité, la gestion environnementale et des exigences techniques spécifiques liées aux lubrifiants et à leur application. La compréhension des normes pertinentes est importante pour s'assurer que toute stratégie de maintenance prédictive développée s'aligne sur les meilleures pratiques de l'industrie et les exigences réglementaires.
+6.2 Normes SAE
+La Society of Automotive Engineers (SAE) publie de nombreuses normes et pratiques recommandées liées aux lubrifiants et à la maintenance des véhicules poids lourds.16
+SAE J300 : Classification de la viscosité des huiles moteur.68
+SAE J310 : Pratique recommandée pour les graisses lubrifiantes automobiles, destinée à aider à la sélection des graisses utilisées pour l'entretien des applications automobiles, y compris les camions et les autobus.69
+SAE J2695 : Pratique recommandée pour les graisses lubrifiantes pour véhicules poids lourds, destinée à aider à la conception des composants et à la sélection des graisses pour les camions et les autobus.73
+SAE J2363 : Norme décrivant les huiles lubrifiantes répondant aux exigences de performance de l'American Petroleum Institute (API) pour les véhicules militaires à roues équipés de moteurs diesel lourds.79
+SAE J115 : Traite de l'application, de l'installation, des essais et de la lubrification des câbles de compteur de vitesse et de tachymètre pour véhicules légers et lourds.16
+SAE RP 624A : Offre des informations générales sur les principes fondamentaux des lubrifiants liés au châssis.16
+SAE RP 631B : Offre des recommandations et des considérations opérationnelles pour la sélection, l'inspection et l'utilisation des lubrifiants dans les applications de moyeux de roues.16
+SAE RP 647 : Offre des directives pour l'entretien et l'utilisation des systèmes de lubrification embarqués.16
+Les normes SAE sont cruciales pour l'industrie automobile, fournissant des directives pour la performance, les essais et la classification des lubrifiants, en particulier pour les applications lourdes. La familiarisation avec ces normes aidera à comprendre les spécifications et les exigences relatives aux lubrifiants utilisés dans les véhicules poids lourds.
+7. Examen des Schémas Techniques et de l'Architecture Système
+7.1 Composants Typiques des Systèmes de Lubrification des Véhicules Poids Lourds
+Les systèmes de lubrification des véhicules poids lourds comprennent généralement plusieurs composants essentiels :
+Carter d'huile/Sump : Réservoir où l'huile est stockée lorsque le moteur ne tourne pas. Situé au bas du moteur, il aide également à dissiper la chaleur.7
+Pompe à huile : Dispositif qui fait circuler l'huile sous pression vers toutes les pièces mobiles à l'intérieur du moteur. Divers types de pompes existent, tels que les pompes à engrenages et les pompes à rotor.7
+Filtre à huile : Élimine la saleté et les particules contaminantes de l'huile lorsqu'elle circule. Inclut souvent une soupape de dérivation pour assurer la lubrification même si le filtre est obstrué.7
+Refroidisseur d'huile : Refroidit l'huile moteur chaude, améliorant ainsi ses performances.7
+Galeries/Lignes d'huile : Canaux situés dans le bloc moteur et la culasse qui dirigent l'huile de la pompe vers les différents composants nécessitant une lubrification.7
+Soupape de décharge de pression d'huile : Limite la pression maximale de l'huile délivrée au système de lubrification.7
+Capteurs : Surveillent divers paramètres tels que la pression, la température, le niveau et la qualité de l'huile, fournissant des données essentielles pour la maintenance prédictive.5
+Systèmes de lubrification centralisés : Systèmes avancés qui distribuent automatiquement le lubrifiant à plusieurs points de la machine à partir d'un emplacement centralisé, améliorant l'efficacité et réduisant les besoins en main-d'œuvre.82
+Chaque composant joue un rôle spécifique dans le maintien d'une lubrification efficace, ce qui est essentiel pour le bon fonctionnement et la longévité du véhicule.
+7.2 Sources de Schémas Techniques et de Diagrammes d'Architecture Système
+Les schémas techniques et les diagrammes d'architecture système des systèmes de lubrification des véhicules poids lourds peuvent être trouvés dans diverses sources :
+Manuels du fabricant et documentation technique (ressources OEM) : Les fabricants de véhicules fournissent souvent des manuels détaillés comprenant des schémas de leurs systèmes.91
+Bases de données en ligne spécialisées : Des entreprises comme SKF et Graco proposent des ressources en ligne avec des schémas et des informations techniques sur leurs systèmes de lubrification.88
+Diagrammes d'ingénierie dans les articles de recherche et les brevets : Les publications scientifiques et les documents de brevets peuvent inclure des schémas illustrant la conception et l'architecture des systèmes de lubrification.94
+Manuels et sites web de réparation automobile : Ces ressources peuvent contenir des schémas simplifiés des systèmes de lubrification, utiles pour comprendre les bases.86
+Il est important de consulter la documentation spécifique au véhicule pour obtenir des schémas précis et détaillés. Les représentations visuelles du système de lubrification facilitent grandement la compréhension de sa complexité et des interrelations entre les composants.
+8. Analyse des Brevets Récents
+8.1 Brevets Relatifs à la Maintenance Prédictive des Systèmes de Lubrification
+L'exploration des bases de données de brevets révèle plusieurs brevets récents liés à la maintenance prédictive des systèmes de lubrification dans les véhicules.
+US10753536B2 : Brevet de 2020 pour la détection et la prédiction des défaillances mécaniques dues à une perte de lubrification dans les machines et les composants mobiles. La méthode implique la surveillance des niveaux de concentration de gaz (oxygène ou dioxyde de carbone) dans un carter ou un environnement de machine fermé pour détecter une lubrification inadéquate et prédire une défaillance imminente.96
+Patent number: 11999511 : Brevet de 2024 de Toyota pour la maintenance prédictive de pièces, utilisant un score de sévérité d'utilisation de la machine pour recommander des interventions de maintenance.97
+Patent number: 11486483 : Brevet pour la surveillance de l'état des composants d'une boîte de vitesses.97
+Patent number: 11017305 : Brevet de 2021 pour un système d'alerte avant la défaillance d'un composant dans un véhicule, basé sur les données de capteurs et la durée de vie résiduelle estimée.97
+Patent number: 10648405 : Brevet de 2020 pour un outil de prédiction de la durée de vie du moteur basé sur l'usure des segments de piston et le carburant consommé.97
+Ces brevets illustrent les efforts continus pour développer des systèmes capables de prévoir les problèmes de lubrification et les défaillances mécaniques dans les véhicules.
+8.2 Brevets Relatifs aux Technologies de Lubrification Intelligente
+Plusieurs brevets récents se concentrent sur les technologies de lubrification intelligente pour les véhicules.
+Stellantis : Brevet de 2025 pour un nouveau système de vidange d'huile de transmission automatique utilisant une pompe à huile auxiliaire électrique pour une vidange plus complète et plus efficace, sans avoir à faire tourner le moteur.98
+Valvoline Inc. : Brevet US12065623B2 de 2024 pour une formulation de lubrifiant destinée aux véhicules électriques et hybrides. Ce lubrifiant contient un additif de molybdate de diisotridécylamine qui modifie la couleur du lubrifiant en réponse aux conditions de fonctionnement (température, charge de contact, viscosité), servant ainsi d'indicateur visuel de l'état du lubrifiant et des performances de la transmission.99
+BorgWarner Inc. : Brevet pour une unité d'entraînement électrique avec des mécanismes améliorés de refroidissement et de lubrification, comprenant des galeries d'alimentation en lubrifiant et un réservoir supérieur pour une distribution efficace du lubrifiant aux différents composants.101
+CN211083578U : Brevet chinois de 2020 pour un dispositif de lubrification pour cric de levage de voiture fixe, utilisant un mécanisme d'inversion pour distribuer l'huile lubrifiante à différents points de lubrification à intervalles de temps différents, évitant ainsi la sur-lubrification et le gaspillage d'huile.102
+La tendance vers la lubrification intelligente suggère un avenir où les systèmes de lubrification seront gérés de manière plus active et pourront fournir un retour d'information en temps réel sur leur état. Ces systèmes peuvent améliorer l'efficacité de la maintenance prédictive en fournissant des indicateurs plus directs et immédiats de l'état de la lubrification.
+9. Exploration des Référentiels de Code
+9.1 Projets GitHub sur la Maintenance Prédictive
+L'exploration de plateformes comme GitHub révèle plusieurs projets de code et référentiels liés à la maintenance prédictive appliquée à des systèmes mécaniques ou à des véhicules.
+AI-Powered Predictive Maintenance System for Vehicles : Projet utilisant des modèles de Gradient Boosting sur des données de capteurs en temps réel pour prévoir les besoins de maintenance et la probabilité de défaillance des pièces. Inclut une interface web pour la visualisation et l'analyse.59

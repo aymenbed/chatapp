@@ -1,0 +1,9 @@
+langchain
+langchain-groq
+langchain-community
+pypdf
+langchain-chroma
+langchain-ollama
+faiss-cpu
+gradio
+streamlit

@@ -1,0 +1,70 @@
+Contexte du Projet :
+Tu es chargé de créer deux chatbots distincts dans le cadre d'un projet de fin d'études axé sur la maintenance prédictive des systèmes de lubrification des véhicules poids lourds. Ces chatbots utilisent des techniques modernes telles que le RAG (Retrieval-Augmented Generation).
+
+🛠️ Tâche à réaliser :
+Tu dois réaliser deux chatbots distincts en Python avec les critères suivants :
+
+1. Chatbot Généraliste :
+
+Objectif : Répondre aux questions générales sur les véhicules poids lourds, leurs systèmes mécaniques, électriques et hydrauliques.
+
+Sources : Multiples documents PDF techniques généraux.
+
+Technologies obligatoires : LangChain, Ollama Embeddings, FAISS ou Chroma pour le stockage vectoriel, modèle LLM Groq.
+
+2. Chatbot Spécialiste (Lubrification) :
+
+Objectif : Répondre spécifiquement aux questions techniques et détaillées sur les systèmes de lubrification.
+
+Sources : PDF spécialisés uniquement sur les systèmes de lubrification.
+
+Technologies obligatoires : LangChain, Ollama Embeddings, FAISS ou Chroma, modèle LLM Groq.
+
+✅ Étapes précises à respecter :
+Installation des bibliothèques :
+
+bash
+Copier
+Modifier
+pip install langchain langchain-groq langchain-community pypdf langchain-chroma langchain-ollama
+Chargement des documents PDF :
+
+Utilise PyPDFLoader.
+
+Charger plusieurs documents pour le généraliste et un ou deux documents très détaillés pour le spécialiste.
+
+Découpage du texte (Splitting) :
+
+Utilise RecursiveCharacterTextSplitter.
+
+Paramètres recommandés : chunk_size=1000, chunk_overlap=200.
+
+Embedding des textes en vecteurs :
+
+Utilise OllamaEmbeddings avec un modèle comme deepseek-r1.
+
+Stockage des embeddings :
+
+Utilise Chroma ou FAISS.
+
+Initialisation du modèle LLM :
+
+Modèle à utiliser : ChatGroq avec clé API GroqCloud.
+
+Pipeline RAG complet :
+
+Implémente un pipeline RAG avec LangChain pour récupérer et générer des réponses précises.
+
+Interface utilisateur :
+
+Construis une interface avec Gradio ou Streamlit simple et claire.
+
+Inclut une gestion de l'historique des échanges (mémoire contextuelle).
+
+🚨 Consignes supplémentaires :
+Documente soigneusement chaque étape avec des commentaires explicatifs clairs.
+
+Prévois des messages d'erreurs ou des exceptions propres pour améliorer l'expérience utilisateur.
+
+Les réponses des chatbots doivent être techniques, pertinentes, concises et en français uniquement.
+
