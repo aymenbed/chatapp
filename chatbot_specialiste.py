@@ -7,7 +7,7 @@ sur les systèmes de lubrification des véhicules poids lourds en utilisant une 
 
 Technologies utilisées:
 - LangChain pour l'orchestration du pipeline RAG
-- Ollama Embeddings pour la vectorisation du texte
+- HuggingFace Embeddings pour la vectorisation du texte
 - FAISS pour le stockage vectoriel
 - Groq comme modèle de langage (LLM)
 """
@@ -19,7 +19,7 @@ from typing import List, Dict, Any, Optional
 # Bibliothèques LangChain
 from langchain.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.embeddings import OllamaEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_groq import ChatGroq
 from langchain.chains import ConversationalRetrievalChain
@@ -109,17 +109,17 @@ class TechnicalTextProcessor:
 class LubricationVectorStore:
     """Classe pour gérer les embeddings et la base vectorielle spécialisée en lubrification."""
     
-    def __init__(self, embedding_model: str = "deepseek-r1"):
+    def __init__(self, embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2"):
         """
         Initialise la base vectorielle spécialisée.
         
         Args:
-            embedding_model: Nom du modèle Ollama à utiliser pour les embeddings
+            embedding_model: Nom du modèle HuggingFace à utiliser pour les embeddings
         """
         self.embedding_model = embedding_model
         try:
-            self.embeddings = OllamaEmbeddings(model=embedding_model)
-            logger.info(f"Modèle d'embedding pour lubrification initialisé: {embedding_model}")
+            self.embeddings = HuggingFaceEmbeddings(model_name=embedding_model)
+            logger.info(f"Modèle d'embedding HuggingFace initialisé: {embedding_model}")
         except Exception as e:
             logger.error(f"Erreur lors de l'initialisation du modèle d'embedding pour lubrification: {e}")
             raise
@@ -283,9 +283,9 @@ class ChatbotSpecialiste:
         self.vector_store_manager = LubricationVectorStore()
         self.llm_interface = TechnicalLLMInterface(api_key)
         
-        # Chargement ou création de la base vectorielle spécialisée
-        if vector_store_dir and os.path.exists(vector_store_dir):
-            logger.info(f"Chargement de la base vectorielle spécialisée existante depuis {vector_store_dir}")
+        # Vérification de la présence du fichier index.faiss (et non seulement du dossier)
+        index_faiss_path = os.path.join(vector_store_dir, "index.faiss") if vector_store_dir else None
+        if vector_store_dir and index_faiss_path and os.path.isfile(index_faiss_path):
             self.vector_store = self.vector_store_manager.load_vector_store(vector_store_dir)
         else:
             logger.info("Création d'une nouvelle base vectorielle spécialisée")
